@@ -288,7 +288,7 @@ export const ChatPage: React.FC<ChatPageProps> = ({
                       animate={{ opacity: 1, y: 0 }}
                       className="flex justify-center"
                     >
-                      <span className="text-[10px] font-bold tracking-wider text-slate-500 uppercase bg-slate-950/50 border border-slate-900 rounded-full py-1 px-4 backdrop-blur-md">
+                      <span className="text-[10px] font-bold tracking-wider text-slate-500 dark:text-slate-400 uppercase bg-slate-100 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-900 rounded-full py-1.5 px-4 backdrop-blur-md shadow-sm dark:shadow-none">
                         {msg.text}
                       </span>
                     </motion.div>
