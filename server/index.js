@@ -90,10 +90,8 @@ io.on('connection', (socket) => {
 });
 
 const PORT = process.env.PORT || 5000;
-if (process.env.NODE_ENV !== 'production') {
-  server.listen(PORT, () => {
-    console.log(`Signaling server listening on port ${PORT}`);
-  });
-}
+server.listen(PORT, () => {
+  console.log(`Signaling server listening on port ${PORT}`);
+});
 
 module.exports = app;
