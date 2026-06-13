@@ -15,7 +15,7 @@ import {
   FileReceiverSession 
 } from '../utils/fileHelper';
 
-const SIGNALING_URL = 'http://localhost:5000';
+const SIGNALING_URL = (import.meta as any).env?.VITE_SIGNALING_URL || 'https://cipher-peer-server.vercel.app';
 const CHUNK_SIZE = 49152; // 48KB raw -> becomes 64KB in base64 (WebRTC safe limit)
 
 export interface ChatMessage {
